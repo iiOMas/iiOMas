@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iiOMas - Video Editor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/Logo.png" alt="iiOMas Logo" class="nav-logo">
+                    <span>iiOMas</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ahmed Osama</h1>
+            <p class="subtitle">Known as iiOMas</p>
+            <p class="hero-text">CS student at Suez Canal University | Passionate about coding, video editing, and gaming 🎮💻 | Always curious, always building, always leveling up!✨</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="cta-button primary">View My Work</a>
+                <a href="#contact" class="cta-button secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Featured Work</h2>
+        <div class="portfolio-grid">
+            <!-- Portrait Videos Container -->
+            <div class="portrait-videos">
+                <!-- Portrait Video 1 -->
+                <div class="portfolio-item portrait">
+                    <div class="video-thumbnail portrait">
+                        <video poster="images/Projects/Thumbnail1.png" id="video1">
+                            <source src="images/Projects/project1.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-controls">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="controls-main">
+                                <div class="controls-left">
+                                    <button class="play-pause">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="volume-container">
+                                        <button class="volume">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider">
+                                            <div class="volume-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls-right">
+                                    <div class="time">
+                                        <span class="current">0:00</span>
+                                        <span>/</span>
+                                        <span class="duration">0:00</span>
+                                    </div>
+                                    <button class="fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Mish Hackers - Syntax حضارة Series</h3>
+                        <p>A vertical video created for Mish Hackers, a tech student team at my university. I made this video to promote their new YouTube series 'Syntax حضارة' which shows how coding connects with our culture.</p>
+                    </div>
+                </div>
+
+                <!-- Portrait Video 2 -->
+                <div class="portfolio-item portrait">
+                    <div class="video-thumbnail portrait">
+                        <video poster="images/Projects/Thumbnail2.png">
+                            <source src="images/Projects/project2.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-controls">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="controls-main">
+                                <div class="controls-left">
+                                    <button class="play-pause">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="volume-container">
+                                        <button class="volume">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider">
+                                            <div class="volume-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls-right">
+                                    <div class="time">
+                                        <span class="current">0:00</span>
+                                        <span>/</span>
+                                        <span class="duration">0:00</span>
+                                    </div>
+                                    <button class="fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>TROSC Art Workshop</h3>
+                        <p>A vertical video I made for TROSC, a tech student team at my university. This video shows their special art workshop where students learned drawing and different art styles, capturing the fun moments of everyone exploring their artistic side.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landscape Videos Container -->
+            <div class="landscape-videos">
+                <!-- Landscape Video 1 -->
+                <div class="portfolio-item landscape">
+                    <div class="video-thumbnail landscape">
+                        <video poster="images/Projects/Thumbnail3.png">
+                            <source src="images/Projects/project3.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-controls">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="controls-main">
+                                <div class="controls-left">
+                                    <button class="play-pause">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="volume-container">
+                                        <button class="volume">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider">
+                                            <div class="volume-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls-right">
+                                    <div class="time">
+                                        <span class="current">0:00</span>
+                                        <span>/</span>
+                                        <span class="duration">0:00</span>
+                                    </div>
+                                    <button class="fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>TROSC Tech Event Reminder</h3>
+                        <p>A quick reminder video I made for TROSC's tech event! Just letting everyone know when and where to show up for this awesome tech gathering.</p>
+                    </div>
+                </div>
+
+                <!-- Landscape Video 2 -->
+                <div class="portfolio-item landscape">
+                    <div class="video-thumbnail landscape">
+                        <video poster="images/Projects/Thumbnail4.png">
+                            <source src="images/Projects/project4.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-controls">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="controls-main">
+                                <div class="controls-left">
+                                    <button class="play-pause">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="volume-container">
+                                        <button class="volume">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider">
+                                            <div class="volume-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls-right">
+                                    <div class="time">
+                                        <span class="current">0:00</span>
+                                        <span>/</span>
+                                        <span class="duration">0:00</span>
+                                    </div>
+                                    <button class="fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>TROSC Cast - Episode 1</h3>
+                        <p>A preview of TROSC's first podcast episode. I created the intro and edited all episodes of the podcast series. This clip shows the beginning of our first episode.</p>
+                        <a href="https://youtu.be/SHuZRLdyTfY" target="_blank" class="watch-full-btn">Watch Full Episode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-video"></i>
+                <h3>Video Editing</h3>
+                <p>Professional video editing with attention to detail and storytelling</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-magic"></i>
+                <h3>Color Grading</h3>
+                <p>Expert color correction and grading to enhance visual appeal</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-film"></i>
+                <h3>Long-Form Videos</h3>
+                <p>Professional editing for extended content like podcasts, YouTube videos, interviews, and other long-duration productions</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Reels & Social Content</h3>
+                <p>Engaging short-form content optimized for all social platforms including Instagram, TikTok, YouTube Shorts, and Facebook</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-camera"></i>
+                <h3>Motion Graphics</h3>
+                <p>Creative motion graphics and animations to enhance your content</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-image"></i>
+                <h3>Photo Editing</h3>
+                <p>Basic photo editing and enhancement services using Adobe Photoshop</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/Logo.png" alt="iiOMas Logo">
+            </div>
+            <div class="about-text">
+                <h3>Ahmed Osama (iiOMas)</h3>
+                <p class="about-description">Professional video editor specializing in both long-form content and social media reels. With expertise in multiple video formats, I create engaging content that stands out across all platforms. Whether it's landscape videos for YouTube or portrait reels for Instagram, I transform raw footage into polished, professional content that captivates audiences.</p>
+                <div class="expertise-areas">
+                    <h3>Areas of Expertise</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-video"></i> Video Editing</li>
+                        <li><i class="fas fa-magic"></i> Color Grading</li>
+                        <li><i class="fas fa-film"></i> Long-Form Video Editing</li>
+                        <li><i class="fas fa-mobile-alt"></i> Social Media Reels</li>
+                        <li><i class="fas fa-camera"></i> Motion Graphics</li>
+                        <li><i class="fas fa-image"></i> Photo Editing</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="images/logos/premiere-pro.png" alt="Adobe Premiere Pro" class="skill-logo">
+                            <span>Adobe Premiere Pro</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logos/after-effects.png" alt="Adobe After Effects" class="skill-logo">
+                            <span>Adobe After Effects</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logos/capcut.png" alt="CapCut" class="skill-logo">
+                            <span>CapCut</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logos/photoshop.png" alt="Adobe Photoshop" class="skill-logo">
+                            <span>Adobe Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p class="contact-email">Email me directly at: <a href="mailto:iiOMasEditing@gmail.com">iiOMasEditing@gmail.com</a></p>
+                <p class="contact-whatsapp">For quick responses, message me on WhatsApp: <a href="https://wa.me/201200353382" target="_blank">+20 01200353382</a></p>
+                <p class="contact-social">You can also reach me through my social media profiles below</p>
+                <div class="contact-social-links">
+                    <a href="https://www.facebook.com/AhmedOsama26" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ahmedosamaelezaby/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/iiOMas" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmedosamamohamedelezaby/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="response-time">I'll respond to your message within 24-48 hours</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9+\s()]*" placeholder="+1234567890">
+                        <label for="whatsapp">WhatsApp Number (Optional)</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="success-message" class="success-message" style="display: none;">
+                        Message sent successfully!
+                    </div>
+                    <div id="error-message" class="error-message" style="display: none;">
+                        Failed to send message. Please try again.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/AhmedOsama26" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ahmedosamaelezaby/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/iiOMas" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmedosamamohamedelezaby/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy;2025 iiOMas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
