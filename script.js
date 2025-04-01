@@ -261,8 +261,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Set initial volume
-        video.volume = 0.5;
-        volumeProgress.style.transform = `scaleX(0.5)`;
+        video.volume = 0.05;
+        volumeProgress.style.transform = `scaleX(0.05)`;
 
         // Format time in MM:SS
         function formatTime(seconds) {
